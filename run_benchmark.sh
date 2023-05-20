@@ -1,3 +1,3 @@
 #!/bin/bash
 source bmk_env/bin/activate
-sudo bmkrun -c benchmarks.yaml -m docker
+hep-score -f hepscore_config.yaml -m docker results/
