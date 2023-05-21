@@ -90,7 +90,7 @@ def vs_freq_plot(exp_res, exp_res_agg, yax):
 def plot_everything(exp_res, exp_res_agg):
     exp_res_agg.drop(columns=exp_res_agg.filter(like="list").columns).set_index(
         "freq"
-    ).T.to_excel("results.xlsx")
+    ).T.to_excel("tables/results.xlsx")
 
     yax = "result"
     vs_freq_plot(exp_res, exp_res_agg, yax)
