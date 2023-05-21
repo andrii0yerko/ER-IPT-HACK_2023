@@ -1,2 +1,16 @@
-sudo cpupower frequency-set -r -u 1.4GHz
-sudo perf stat -e power/energy-pkg/ hep-score -f hepscore_config.yaml -m docker results/
+#!/bin/bash
+# RUN WITH SUDO
+
+mkdir -p test_results
+
+for freq in 1.4 1.7 2.1
+do
+    for i in {1..5}
+    do
+        cpupower frequency-set -r -u $freq"GHz"
+        # perf stat -e power/energy-pkg/ hep-score -f hepscore_config.yaml -m docker results/
+        perf stat -e power/energy-pkg/ sleep 1 &>test_results/$freq"_"$i".log"
+    done
+done
+
+
