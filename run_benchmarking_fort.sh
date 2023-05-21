@@ -8,8 +8,8 @@ do
     for i in {1..5}
     do
         cpupower frequency-set -r -u $freq"GHz"
-        # perf stat -e power/energy-pkg/ hep-score -f hepscore_config.yaml -m docker results/
-        perf stat -e power/energy-pkg/ sleep 1 &>test_results/$freq"_"$i".log"
+        perf stat -e power/energy-pkg/ hep-score -f hepscore_config.yaml -m docker results/ &>test_results/$freq"_"$i".log"
+        # perf stat -e power/energy-pkg/ sleep 1 &>test_results/$freq"_"$i".log"
     done
 done
 
