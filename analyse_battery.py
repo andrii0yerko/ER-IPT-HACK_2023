@@ -6,7 +6,7 @@ import pandas as pd
 
 def load_logs():
     results = []
-    for file in glob.glob("test_results_battery/*.log"):
+    for file in glob.glob("experiment_results/test_results_battery/*.log"):
         with open(file) as f:
             text = f.read()
         text = text.replace("\u202f", "")
@@ -45,5 +45,5 @@ if __name__ == "__main__":
     df = load_logs()
     df["ratio"] = df["Joules"] / df["battery"]
     df.groupby("freq").agg({"ratio": ["mean", "max", "min"]}).to_excel(
-        "tables/battery.xlsx"
+        "report/tables/battery.xlsx"
     )

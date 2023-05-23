@@ -90,7 +90,7 @@ def vs_freq_plot(exp_res, exp_res_agg, yax):
 def plot_everything(exp_res, exp_res_agg):
     exp_res_agg.drop(columns=exp_res_agg.filter(like="list").columns).set_index(
         "freq"
-    ).T.to_excel("tables/results.xlsx")
+    ).T.to_excel("report/tables/results.xlsx")
 
     yax = "result"
     vs_freq_plot(exp_res, exp_res_agg, yax)
@@ -99,7 +99,7 @@ def plot_everything(exp_res, exp_res_agg):
     plt.xlabel("Frequency, GHz")
     plt.ylabel("Score")
     plt.grid()
-    plt.savefig("figures/freq-res.pdf", pad_inches=0.2)
+    plt.savefig("report/figures/freq-res.pdf", pad_inches=0.2)
     # plt.show()
     plt.clf()
     plt.cla()
@@ -110,7 +110,7 @@ def plot_everything(exp_res, exp_res_agg):
     plt.xlabel("Frequency, GHz")
     plt.ylabel("Power consumption, joules")
     plt.grid()
-    plt.savefig("figures/freq-joul.pdf", pad_inches=0.2)
+    plt.savefig("report/figures/freq-joul.pdf", pad_inches=0.2)
     # plt.show()
     plt.clf()
     plt.cla()
@@ -128,7 +128,7 @@ def plot_everything(exp_res, exp_res_agg):
     plt.xlabel("Power consumption, joules")
     plt.ylabel("Score")
     plt.grid()
-    plt.savefig("figures/joul-score.pdf", pad_inches=0.2)
+    plt.savefig("report/figures/joul-score.pdf", pad_inches=0.2)
     plt.clf()
     plt.cla()
 
@@ -138,7 +138,7 @@ def plot_everything(exp_res, exp_res_agg):
     plt.xlabel("Frequency, GHz")
     plt.ylabel("Score per Joule, 1/joules")
     plt.grid()
-    plt.savefig("figures/freq-score-per-joul.pdf", pad_inches=0.2)
+    plt.savefig("report/figures/freq-score-per-joul.pdf", pad_inches=0.2)
     plt.clf()
     plt.cla()
 
@@ -148,7 +148,7 @@ def plot_everything(exp_res, exp_res_agg):
     plt.xlabel("Frequency, GHz")
     plt.ylabel("Time, s")
     plt.grid()
-    plt.savefig("figures/freq-time.pdf", pad_inches=0.2)
+    plt.savefig("report/figures/freq-time.pdf", pad_inches=0.2)
     plt.clf()
     plt.cla()
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 # RUN WITH SUDO
 freq=1.7
-DIRNAME=test_results_battery
+DIRNAME=experiment_results/test_results_battery
 
 mkdir -p $DIRNAME
 
