@@ -1,0 +1,80 @@
+  native-path:          BAT0
+  vendor:               HP
+  model:                Primary
+  serial:               SerialNumber
+  power supply:         yes
+  updated:              сб, 27-тра-2023 12:09:56 +0300 (4 seconds ago)
+  has history:          yes
+  has statistics:       yes
+  battery
+    present:             yes
+    rechargeable:        yes
+    state:               discharging
+    warning-level:       none
+    energy:              19,958 Wh
+    energy-empty:        0 Wh
+    energy-full:         38,249 Wh
+    energy-full-design:  38,249 Wh
+    energy-rate:         0 W
+    voltage:             11,353 V
+    charge-cycles:       N/A
+    percentage:          52%
+    capacity:            100%
+    technology:          lithium-ion
+    icon-name:          'battery-good-symbolic'
+  History (charge):
+    1685178566	52,000	discharging
+  History (rate):
+    1685178596	0,000	discharging
+    1685178566	85,261	discharging
+
+2023-05-27 12:10:00 hepscore [INFO] TestBenchmark Benchmark
+2023-05-27 12:10:00 hepscore [INFO] Config Hash:         aefb0f900dde10fd8df51880e487c9ae140f7846c6797bd88bd6dc4aea854459
+2023-05-27 12:10:00 hepscore [INFO] HEPscore version:    1.2.0
+2023-05-27 12:10:00 hepscore [INFO] System:              Linux fort-laptop 5.15.112-1-MANJARO #1 SMP PREEMPT Wed May 17 11:11:32 UTC 2023 x86_64
+2023-05-27 12:10:00 hepscore [INFO] Container Execution: docker
+2023-05-27 12:10:00 hepscore [INFO] Registry:            docker://gitlab-registry.cern.ch/hep-benchmarks/hep-workloads
+2023-05-27 12:10:00 hepscore [INFO] Output:              /home/fort/ipt_hack/experiments/experiment2/results/HEPscore_27May2023_121000
+2023-05-27 12:10:00 hepscore [INFO] Date:                Sat May 27 12:10:00 2023
+
+2023-05-27 12:10:00 hepscore [INFO] Executing 1 run of atlas-gen-bmk
+2023-05-27 12:10:00 hepscore [INFO] Starting run0
+2023-05-27 12:27:33 hepscore [INFO] 
+2023-05-27 12:27:33 hepscore [INFO] Final result: 100.5715
+
+ Performance counter stats for 'system wide':
+
+          8 876,98 Joules power/energy-pkg/                                                     
+
+    1053,577119216 seconds time elapsed
+
+  native-path:          BAT0
+  vendor:               HP
+  model:                Primary
+  serial:               SerialNumber
+  power supply:         yes
+  updated:              сб, 27-тра-2023 12:27:59 +0300 (1 seconds ago)
+  has history:          yes
+  has statistics:       yes
+  battery
+    present:             yes
+    rechargeable:        yes
+    state:               discharging
+    warning-level:       none
+    energy:              16,692 Wh
+    energy-empty:        0 Wh
+    energy-full:         38,249 Wh
+    energy-full-design:  38,249 Wh
+    energy-rate:         0 W
+    voltage:             11,205 V
+    charge-cycles:       N/A
+    percentage:          43%
+    capacity:            100%
+    technology:          lithium-ion
+    icon-name:          'battery-good-symbolic'
+  History (charge):
+    1685179603	43,000	discharging
+  History (rate):
+    1685179633	0,000	discharging
+    1685179603	85,263	discharging
+
