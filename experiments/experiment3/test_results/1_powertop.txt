@@ -1,0 +1,243 @@
+____________________________________________________________________
+			P o w e r T O P
+
+____________________________________________________________________
+ *  *  *   System Information   *  *  *
+
+PowerTOP Version;v2.11-1-g7ef7f79 ran at Sun May 28 18:26:34 2023
+
+Kernel Version;Linux version 5.15.0-1038-azure
+System Name;Microsoft CorporationVirtual MachineHyper-V UEFI Release v4.1
+CPU Information;4 Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz
+OS Information;Ubuntu 20.04.6 LTS
+
+Target: 1 units/s;System:  11.5 wakeup/s;CPU:  1.2% usage;GPU: 0 ops/s;GFX: 0 wakeups/s;VFS: 0 ops/s;
+
+____________________________________________________________________
+ *  *  *   Top 10 Power Consumers   *  *  *
+
+Usage;Events/s;Category;Description;PW Estimate
+  0.4%; 0.00;Process;[PID 86304] basf2; 6.80 mW  
+  0.0%;  1.2;Process;[PID 77190] /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock ; 4.58 mW  
+  0.0%;  0.5;Timer;tick_sched_timer; 2.31 mW  
+  0.0%;  0.5;kWork;free_work; 1.85 mW  
+  0.0%;  0.4;Process;[PID 85980] docker; 1.77 mW  
+  0.0%;  0.4;Process;[PID 86018] runc:[2:INIT]; 1.76 mW  
+  0.0%; 0.26;Process;[PID 80583] /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock ; 1.11 mW  
+  0.0%; 0.27;Process;[PID 14] [rcu_sched]; 1.06 mW  
+  0.0%; 0.25;Process;[PID 828] /lib/systemd/systemd-logind ; 1.00 mW  
+  0.0%; 0.25;Process;[PID 85996] containerd-shim; 1.00 mW  
+
+____________________________________________________________________
+ *  *  *   Processor Idle State Report   *  *  *
+
+Package;0
+;
+;
+;
+
+CPU;0
+CPU;1
+CPU;2
+CPU;3
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+
+____________________________________________________________________
+ *  *  *   Processor Frequency Report   *  *  *
+
+Package;0
+Idle; 100.0% 
+;
+;
+;
+;
+
+CPU 0
+Idle; 100.0% 
+CPU 1
+Idle; 100.0% 
+CPU 2
+Idle; 100.0% 
+CPU 3
+Idle; 100.0% 
+;
+;
+;
+;
+;
+;
+;
+;
+
+____________________________________________________________________
+ *  *  *   Overview of Software Power Consumers   *  *  *
+
+Usage;Wakeups/s;GPU ops/s;Disk IO/s;GFX Wakeups/s;Category;Description;PW Estimate
+  4.4 ms/s;;;;;Process;[PID 86304] basf2; 6.80 mW  
+  8.0 us/s;  1.2;;;;Process;[PID 77190] /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock ; 4.58 mW  
+260.1 us/s;  0.5;;;;Timer;tick_sched_timer; 2.31 mW  
+  3.2 us/s;  0.5;;;;kWork;free_work; 1.85 mW  
+  4.3 us/s;  0.4;;;;Process;[PID 85980] docker; 1.77 mW  
+  3.1 us/s;  0.4;;;;Process;[PID 86018] runc:[2:INIT]; 1.76 mW  
+ 41.9 us/s; 0.26;;;;Process;[PID 80583] /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock ; 1.11 mW  
+  2.9 us/s; 0.27;;;;Process;[PID 14] [rcu_sched]; 1.06 mW  
+  5.3 us/s; 0.25;;;;Process;[PID 828] /lib/systemd/systemd-logind ; 1.00 mW  
+ 11.7 us/s; 0.25;;;;Process;[PID 85996] containerd-shim; 1.00 mW  
+134.2 us/s; 0.19;;;;Timer;process_timeout;  977 uW  
+  1.6 us/s; 0.23;;;;Process;[PID 76918] /usr/bin/containerd ;  907 uW  
+510.3 us/s; 0.00;;;;Process;[PID 86431] basf2;  808 uW  
+ 37.5 us/s; 0.19;;;;Process;[PID 85979] docker;  791 uW  
+  2.7 us/s; 0.20;;;;kWork;blk_mq_requeue_work;  783 uW  
+  6.8 us/s; 0.19;;;;Process;[PID 85981] docker;  778 uW  
+  2.5 us/s; 0.19;;;;Process;[PID 86006] runc;  748 uW  
+337.8 us/s; 0.05;;;;kWork;ext4_discard_work;  722 uW  
+ 41.5 us/s; 0.16;;;;Process;[PID 78801] /home/ubuntu/.vscode-server/bin/e18005f0f1b33c29e81d732535d8c0e47cafb0b5/node /home/ubuntu/.vscode-server/bin/e1800;  706 uW  
+ 31.2 us/s; 0.17;;;;Timer;hrtimer_wakeup;  701 uW  
+  1.6 us/s; 0.17;;;;Process;[PID 85972] docker;  678 uW  
+  1.3 us/s; 0.17;;;;Process;[PID 85964] docker;  677 uW  
+ 51.8 us/s; 0.14;;;;Process;[PID 86088] belle2-gen-sim-;  642 uW  
+  2.8 us/s; 0.16;;;;Process;[PID 85983] docker;  623 uW  
+  2.1 us/s; 0.15;;;;Process;[PID 85986] docker;  587 uW  
+  1.2 us/s; 0.15;;;;Process;[PID 86034] runc;  586 uW  
+ 14.5 us/s; 0.13;;;;Process;[PID 86002] containerd-shim;  538 uW  
+ 21.7 us/s; 0.11;;;;Interrupt;[6] tasklet(softirq);  469 uW  
+ 20.9 us/s; 0.10;;;;Process;[PID 79029] /home/ubuntu/.vscode-server/bin/e18005f0f1b33c29e81d732535d8c0e47cafb0b5/node /home/ubuntu/.vscode-server/bin/e1800;  433 uW  
+  5.7 us/s; 0.11;;;;Process;[PID 77196] /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock ;  433 uW  
+260.9 us/s; 0.00;;;;Process;[PID 85962] workload.sh;  418 uW  
+  2.4 us/s; 0.10;;;;Process;[PID 79588] /home/ubuntu/.vscode-server/bin/e18005f0f1b33c29e81d732535d8c0e47cafb0b5/node /home/ubuntu/.vscode-server/bin/e1800;  416 uW  
+  5.5 us/s; 0.10;;;;Process;[PID 79589] /home/ubuntu/.vscode-server/bin/e18005f0f1b33c29e81d732535d8c0e47cafb0b5/node /home/ubuntu/.vscode-server/bin/e1800;  409 uW  
+  9.5 us/s; 0.10;;;;Process;[PID 77200] /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock ;  393 uW  
+  5.3 us/s; 0.10;;;;Process;[PID 76929] /usr/bin/containerd ;  386 uW  
+  6.7 us/s; 0.09;;;;Process;[PID 77193] /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock ;  377 uW  
+236.7 us/s;;;;;Process;[PID 86494] basf2;  369 uW  
+ 42.3 us/s; 0.08;;;;Process;[PID 86161] belle2-gen-sim-;  364 uW  
+  3.9 us/s; 0.09;;;;Process;[PID 77191] /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock ;  361 uW  
+214.5 us/s; 0.01;;;;Process;[PID 86150] python3;  358 uW  
+  0.9 us/s; 0.09;;;;Process;[PID 86012] runc;  356 uW  
+  5.5 us/s; 0.09;;;;Process;[PID 76923] /usr/bin/containerd ;  352 uW  
+ 29.5 us/s; 0.08;;;;Process;[PID 86017] belle2-gen-sim-;  344 uW  
+ 14.1 us/s; 0.08;;;;Process;[PID 86007] runc;  343 uW  
+210.6 us/s; 0.00;;;;Process;[PID 86334] python3;  340 uW  
+  4.8 us/s; 0.08;;;;Process;[PID 86003] containerd-shim;  328 uW  
+201.7 us/s;;;;;Interrupt;[9] RCU(softirq);  315 uW  
+186.7 us/s; 0.00;;;;Process;[PID 86226] python3;  303 uW  
+ 33.1 us/s; 0.06;;;;kWork;psi_avgs_work;  292 uW  
+  3.3 us/s; 0.07;;;;Process;[PID 146] [jbd2/sda1-8];  291 uW  
+  0.6 us/s; 0.07;;;;Process;[PID 85989] containerd-shim;  287 uW  
+  6.0 us/s; 0.07;;;;Process;[PID 76926] /usr/bin/containerd ;  284 uW  
+174.1 us/s; 0.00;;;;kWork;disk_events_workfn;  283 uW  
+ 41.5 us/s; 0.06;;;;Process;[PID 85971] docker;  282 uW  
+  7.7 us/s; 0.07;;;;Process;[PID 85982] docker;  275 uW  
+175.4 us/s;;;;;kWork;drm_fb_helper_damage_work;  274 uW  
+  3.5 us/s; 0.07;;;;kWork;blk_mq_run_work_fn;  269 uW  
+162.8 us/s; 0.00;;;;Process;[PID 86475] python3;  265 uW  
+ 59.8 us/s; 0.04;;;;kWork;fb_flashcursor;  265 uW  
+  3.0 us/s; 0.06;;;;Process;[PID 76928] /usr/bin/containerd ;  257 uW  
+ 83.2 us/s; 0.03;;;;Process;[PID 86017] runc:[2:INIT];  256 uW  
+ 40.0 us/s; 0.05;;;;Process;[PID 86235] belle2-gen-sim-;  246 uW  
+ 37.4 us/s; 0.05;;;;Process;[PID 85963] docker;  241 uW  
+ 85.4 us/s; 0.03;;;;Interrupt;[7] sched(softirq);  236 uW  
+ 19.9 us/s; 0.05;;;;Process;[PID 85962] hep-score;  226 uW  
+  3.2 us/s; 0.06;;;;Process;[PID 85965] docker;  223 uW  
+ 11.9 us/s; 0.05;;;;Process;[PID 86062] belle2-gen-sim-;  213 uW  
+  6.1 us/s; 0.05;;;;Process;[PID 85987] docker;  204 uW  
+ 13.0 us/s; 0.05;;;;Process;[PID 86004] runc;  203 uW  
+  4.8 us/s; 0.05;;;;kWork;ext4_end_io_rsv_work;  202 uW  
+120.5 us/s; 0.00;;;;Process;[PID 86315] python3;  199 uW  
+ 12.5 us/s; 0.04;;;;Process;[PID 86130] belle2-gen-sim-;  191 uW  
+  4.6 us/s; 0.05;;;;Process;[PID 85974] docker;  190 uW  
+  9.9 us/s; 0.04;;;;Process;[PID 85966] docker;  187 uW  
+ 16.4 us/s; 0.04;;;;Process;[PID 86279] bash;  186 uW  
+  8.1 us/s; 0.04;;;;Process;[PID 85949] cpuUsage.sh;  184 uW  
+103.1 us/s; 0.00;;;;Process;[PID 86203] python3;  172 uW  
+  6.4 us/s; 0.04;;;;Process;[PID 78972] sshd: ubuntu@notty ;  170 uW  
+100.9 us/s; 0.00;;;;Process;[PID 86425] python3;  169 uW  
+  3.3 us/s; 0.04;;;;Process;[PID 85978] docker;  165 uW  
+  3.3 us/s; 0.04;;;;Process;[PID 86005] containerd-shim;  165 uW  
+ 56.8 us/s; 0.02;;;;Interrupt;[3] net_rx(softirq);  157 uW  
+ 11.4 us/s; 0.03;;;;Process;[PID 835] /usr/lib/udisks2/udisksd ;  155 uW  
+  2.0 us/s; 0.04;;;;Process;[PID 85999] containerd-shim;  152 uW  
+  1.6 us/s; 0.04;;;;Process;[PID 85967] docker;  151 uW  
+  6.6 us/s; 0.03;;;;Process;[PID 78837] /home/ubuntu/.vscode-server/bin/e18005f0f1b33c29e81d732535d8c0e47cafb0b5/node /home/ubuntu/.vscode-server/bin/e1800;  148 uW  
+ 11.8 us/s; 0.03;;;;Process;[PID 86204] belle2-gen-sim-;  144 uW  
+  3.5 us/s; 0.03;;;;Process;[PID 85984] docker;  143 uW  
+ 91.4 us/s;;;;;Process;[PID 86441] python3;  143 uW  
+ 85.7 us/s;;;;;Process;[PID 86129] python3;  134 uW  
+  4.1 us/s; 0.03;;;;Process;[PID 85975] docker;  132 uW  
+ 33.2 us/s; 0.02;;;;kWork;wb_workfn;  132 uW  
+ 83.3 us/s;;;;;Process;[PID 86202] b2anypython;  130 uW  
+  9.6 us/s; 0.03;;;;Timer;blk_stat_timer_fn;  129 uW  
+  1.9 us/s; 0.03;;;;kWork;kfree_rcu_work;  129 uW  
+ 80.2 us/s;;;;;Process;[PID 86555] basf2;  125 uW  
+ 77.9 us/s;;;;;Timer;delayed_work_timer_fn;  122 uW  
+ 69.7 us/s; 0.00;;;;kWork;css_killed_work_fn;  120 uW  
+ 69.4 us/s; 0.00;;;;kWork;key_garbage_collector;  120 uW  
+ 45.5 us/s; 0.01;;;;Process;[PID 76092] /lib/systemd/systemd --user ;  117 uW  
+
+
+The system baseline power is estimated at:  64.5 m W;
+____________________________________________________________________
+ *  *  *   Device Power Report   *  *  *
+
+Usage;Device Name;PW Estimate
+  1.2%;CPU misc; 64.5 mW   
+  1.2%;CPU core;    0 mW   
+  1.2%;DRAM;    0 mW   
+  8.4 pkts/s;Network interface: eth0 (hv_netvsc);           
+  0.0 pkts/s;nic:docker0;           
+  0.0%;runtime-alarmtimer.0.auto;           
+  0.0%;runtime-reg-dummy;           
+  0.0%;runtime-kgdboc;           
+  0.0%;runtime-eisa.0;           
+  0.0%;runtime-Fixed MDIO bus.0;           
+  0.0%;runtime-rtc-efi.0;           
+  0.0%;runtime-VMBUS:00;           
+  0.0%;runtime-HYPER_V_GEN_COUNTER_V1:00;           
+  0.0%;runtime-efivars.0;           
+  0.0%;runtime-serial8250;           
+  0.0%;runtime-PNP0003:00;           
+  0.0%;runtime-pcspkr;           
+____________________________________________________________________
+ *  *  *   Process Device Activity   *  *  *
+
+Process;Device
+systemd;/dev/autofs
+;/dev/kmsg
+;/dev/rfkill
+systemd-journal;/dev/kmsg
+;/dev/kmsg
+multipathd;/dev/mapper/control
+chronyd;/dev/ptp0
+systemd-logind;/dev/input/event0
+bpfilter_umh;/dev/kmsg
+hv_kvp_daemon;/dev/vmbus/hv_kvp
+
+____________________________________________________________________
+ *  *  *   AHCI ALPM Residency Statistics - Not supported on this macine   *  *  *
+
+____________________________________________________________________
+ *  *  *   Software Settings in Need of Tuning   *  *  *
+
+Description;Script
+VM writeback timeout;echo '1500' > '/proc/sys/vm/dirty_writeback_centisecs';
+____________________________________________________________________
+ *  *  *   Untunable Software Issues   *  *  *
+
+Description
+____________________________________________________________________
+ *  *  *   Optimal Tuned Software Settings   *  *  *
+
+Description
+NMI watchdog should be turned off
+
