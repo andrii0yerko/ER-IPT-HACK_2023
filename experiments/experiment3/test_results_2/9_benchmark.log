@@ -1,0 +1,18 @@
+2023-05-29 22:29:17 hepscore [INFO] TestBenchmark Benchmark
+2023-05-29 22:29:17 hepscore [INFO] Config Hash:         aefb0f900dde10fd8df51880e487c9ae140f7846c6797bd88bd6dc4aea854459
+2023-05-29 22:29:17 hepscore [INFO] HEPscore version:    1.5.0
+2023-05-29 22:29:17 hepscore [INFO] System:              Linux VM 5.15.0-1038-azure #45~20.04.1-Ubuntu SMP Tue Apr 25 18:45:15 UTC 2023 x86_64
+2023-05-29 22:29:17 hepscore [INFO] Container Execution: docker
+2023-05-29 22:29:17 hepscore [INFO] Implementation:      docker
+2023-05-29 22:29:17 hepscore [INFO] Registry:            docker://gitlab-registry.cern.ch/hep-benchmarks/hep-workloads
+2023-05-29 22:29:17 hepscore [INFO] Output:              /home/ubuntu/ER-IPT-HACK_2023/experiments/experiment3/results/HEPscore_29May2023_222917
+2023-05-29 22:29:17 hepscore [INFO] Date:                Mon May 29 22:29:17 2023
+
+2023-05-29 22:29:17 hepscore [INFO] Executing 1 run of atlas-gen-bmk [v2.1]
+2023-05-29 22:29:17 hepscore [INFO] Starting run0
+2023-05-29 22:39:38 hepscore [INFO] 
+2023-05-29 22:39:38 hepscore [INFO] Final result: 54.4925
+
+real	10m21.163s
+user	0m0.194s
+sys	0m0.055s
