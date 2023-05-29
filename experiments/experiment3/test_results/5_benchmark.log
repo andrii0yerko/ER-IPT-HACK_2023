@@ -1,0 +1,18 @@
+2023-05-29 20:57:44 hepscore [INFO] TestBenchmark Benchmark
+2023-05-29 20:57:44 hepscore [INFO] Config Hash:         b15b88f625f2971869f56bbbb0d9dc305b904aa666d5e3336a6fa420d7926b01
+2023-05-29 20:57:44 hepscore [INFO] HEPscore version:    1.5.0
+2023-05-29 20:57:44 hepscore [INFO] System:              Linux VM 5.15.0-1038-azure #45~20.04.1-Ubuntu SMP Tue Apr 25 18:45:15 UTC 2023 x86_64
+2023-05-29 20:57:44 hepscore [INFO] Container Execution: docker
+2023-05-29 20:57:44 hepscore [INFO] Implementation:      docker
+2023-05-29 20:57:44 hepscore [INFO] Registry:            docker://gitlab-registry.cern.ch/hep-benchmarks/hep-workloads
+2023-05-29 20:57:44 hepscore [INFO] Output:              /home/ubuntu/ER-IPT-HACK_2023/experiments/experiment3/results/HEPscore_29May2023_205744
+2023-05-29 20:57:44 hepscore [INFO] Date:                Mon May 29 20:57:44 2023
+
+2023-05-29 20:57:44 hepscore [INFO] Executing 1 run of belle2-gen-sim-reco-bmk [v2.2]
+2023-05-29 20:57:44 hepscore [INFO] Starting run0
+2023-05-29 21:03:33 hepscore [INFO] 
+2023-05-29 21:03:33 hepscore [INFO] Final result: 60.35
+
+real	5m48.763s
+user	0m0.159s
+sys	0m0.077s
