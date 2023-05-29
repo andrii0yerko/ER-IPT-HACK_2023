@@ -2,6 +2,7 @@ import argparse
 import glob
 import os
 import re
+from datetime import datetime
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -12,12 +13,17 @@ plt.rcParams["legend.fontsize"] = 14
 plt.rcParams["axes.titlesize"] = 14
 
 
-def read_logs(directory):
+def read_file(file):
+    with open(file) as f:
+        text = f.read()
+    text = text.replace("\u202f", "")
+    return text
+
+
+def read_logs_perf(directory):
     results = []
     for file in glob.glob(os.path.join(directory, "*.log")):
-        with open(file) as f:
-            text = f.read()
-        text = text.replace("\u202f", "")
+        text = read_file(file)
 
         freq = float(file.split("/")[-1].split("_")[0])
 
@@ -50,11 +56,64 @@ def read_logs(directory):
     return results
 
 
+def read_logs_powertop(directory):
+    results = []
+    benchmark_files = glob.glob(os.path.join(directory, "*.log"))
+    benchmark_files = sorted(
+        benchmark_files, key=lambda x: int(os.path.basename(x).split("_")[0])
+    )
+    powertop_files = glob.glob(os.path.join(directory, "*.txt"))
+    powertop_files = sorted(
+        powertop_files, key=lambda x: int(os.path.basename(x).split("_")[0])
+    )
+    for file_bmk, file_power in zip(benchmark_files, powertop_files):
+        text_bmk = read_file(file_bmk)
+        text_powertop = read_file(file_power)
+
+        score = float(re.search(r"Final result: ([\d.]+)", text_bmk).group(1))
+
+        time_string = re.search(r"real\t([\d\.ms]+)\n", text_bmk).group(1)
+        duration = datetime.strptime(time_string, "%Mm%S.%fs")
+        elapsed = (
+            duration.minute * 60 + duration.second + duration.microsecond / 1000000
+        )
+
+        try:
+            joules = float(
+                re.search(
+                    r"The system baseline power is estimated at: +([\d\.]+) +W",
+                    text_powertop,
+                ).group(1)
+            )
+        except AttributeError:
+            joules = (
+                float(
+                    re.search(
+                        r"The system baseline power is estimated at: +([\d\.]+) +m W",
+                        text_powertop,
+                    ).group(1)
+                )
+                / 1000
+            )
+
+        record = {
+            # "freq": freq,
+            "Joules": joules * elapsed,
+            "result": score,
+            "time": elapsed,
+        }
+        print(file_bmk, record)
+
+        results.append(record)
+    return results
+
+
 def load_data(read_dir):
-    results = read_logs(read_dir)
+    results = read_logs_perf(read_dir)
     exp_res = pd.DataFrame(results)
     exp_res["score_per_joule"] = exp_res["result"] / exp_res["Joules"]
-    exp_res["perf_to_battery_ratio"] = exp_res["Joules"] / exp_res["battery"]
+    if "battery" in exp_res:
+        exp_res["perf_to_battery_ratio"] = exp_res["Joules"] / exp_res["battery"]
 
     exp_res_agg = exp_res.groupby("freq").agg(
         {k: ["median", "max", "min", list] for k in exp_res.columns if k != "freq"}
