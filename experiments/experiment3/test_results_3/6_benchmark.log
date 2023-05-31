@@ -1,0 +1,18 @@
+2023-05-30 23:15:42 hepscore [INFO] TestBenchmark Benchmark
+2023-05-30 23:15:42 hepscore [INFO] Config Hash:         66da8991da2671dc5bcefb83e542714488e1eea7f559f384c6ee915185b964ef
+2023-05-30 23:15:42 hepscore [INFO] HEPscore version:    1.5.0
+2023-05-30 23:15:42 hepscore [INFO] System:              Linux VM 5.15.0-1038-azure #45~20.04.1-Ubuntu SMP Tue Apr 25 18:45:15 UTC 2023 x86_64
+2023-05-30 23:15:42 hepscore [INFO] Container Execution: docker
+2023-05-30 23:15:42 hepscore [INFO] Implementation:      docker
+2023-05-30 23:15:42 hepscore [INFO] Registry:            docker://gitlab-registry.cern.ch/hep-benchmarks/hep-workloads
+2023-05-30 23:15:42 hepscore [INFO] Output:              /home/ubuntu/ER-IPT-HACK_2023/experiments/experiment3/results/HEPscore_30May2023_231542
+2023-05-30 23:15:42 hepscore [INFO] Date:                Tue May 30 23:15:42 2023
+
+2023-05-30 23:15:42 hepscore [INFO] Executing 1 run of cms-reco-bmk [v2.1]
+2023-05-30 23:15:42 hepscore [INFO] Starting run0
+2023-05-30 23:26:51 hepscore [INFO] 
+2023-05-30 23:26:51 hepscore [INFO] Final result: 57.7585
+
+real	11m8.762s
+user	0m0.175s
+sys	0m0.078s
