@@ -1,0 +1,41 @@
+- path: "experiments/experiment1/test_results"
+  logparser: perf_freq
+  meta:
+    machine: local
+    workload: belle2-gen-sim-reco-bmk
+
+- path: "experiments/experiment1/test_results_battery"
+  logparser: perf_freq
+  meta:
+    machine: local
+    workload: belle2-gen-sim-reco-bmk
+
+- path: "experiments/experiment2/test_results"
+  logparser: perf_freq
+  meta:
+    machine: local
+    workload: atlas-gen-bmk
+
+- path: "experiments/experiment2/test_results_2"
+  logparser: perf_freq
+  meta:
+    machine: local
+    workload: cms-reco-bmk
+
+- path: "experiments/experiment3/test_results"
+  logparser: powertop
+  meta:
+    machine: azure
+    workload: belle2-gen-sim-reco-bmk
+
+- path: "experiments/experiment3/test_results_2"
+  logparser: powertop
+  meta:
+    machine: azure
+    workload: atlas-gen-bmk
+
+- path: "experiments/experiment3/test_results_3"
+  logparser: powertop
+  meta:
+    machine: azure
+    workload: cms-reco-bmk
