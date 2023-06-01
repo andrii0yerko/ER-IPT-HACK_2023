@@ -132,6 +132,21 @@ def draw_relplot(data, x, y, hue):
     sns.scatterplot(data=data, x=x, y=y, hue=hue, legend=False, ax=plt.gca())
 
 
+def draw_scatter_relplot(data, x, y, hue, style):
+    sns.relplot(
+        x=x,
+        y=y,
+        hue=hue,
+        kind="scatter",
+        markers=True,
+        dashes=True,
+        style=style,
+        aspect=1.5,
+        data=data,
+        palette="deep",
+    )
+
+
 def draw_barplot(data, x, y, hue, logscale=False):
     plt.figure()
     sns.barplot(
@@ -199,6 +214,11 @@ def plot_everything(df, show=True, out_dir="test"):
             draw_relplot,
             (df[~df["Battery Consumption, Joules"].isna()], "CPU frequency, GHz", "Battery Consumption, Joules", "workload"),
             "freq-battery",
+        ),
+        (
+            draw_scatter_relplot,
+            (df[df["machine"] == "local"], "Power Consumption, Joules", "Benchmark Score", "CPU frequency, GHz", "workload"),
+            "score-joul",
         ),
         (
             draw_barplot,
